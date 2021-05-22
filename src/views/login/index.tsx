@@ -33,11 +33,17 @@ const Login = () => {
           </Form.Item>
         </Form>
         <MyDivider />
-        <LinkButton type={'link'}>没有账号？注册新账号</LinkButton>
+        <BtnWrap>
+          <LinkButton type={'link'}>没有账号？注册新账号</LinkButton>
+        </BtnWrap>
       </MyCard>
     </LoginWrap>
   )
 }
+
+const BtnWrap = styled.div`
+  text-align: center;
+`
 
 const LinkButton = styled(Button)`
   padding: 0;
@@ -80,7 +86,6 @@ const MyCard = styled(Card)`
   box-sizing: border-box;
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
-  text-align: center;
 `
 
 export default Login
